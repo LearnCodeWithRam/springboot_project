@@ -19,8 +19,9 @@ pageEncoding="ISO-8859-1"%>
 					</div>		
 				</td>
 			</tr>
+			<!-- ramanuj saket -->
 			<tr>
-				<td><label class="font-weight-bold">Username</label></td>
+				<td><label class="font-weight-bold">Enter correct Username</label></td>
 				<td>
 				<div class="form-group">
 					<div class="input-group">
@@ -35,7 +36,7 @@ pageEncoding="ISO-8859-1"%>
 				</td>
 			</tr>
 			<tr>
-				<td><label class="font-weight-bold" for="fullname">Fullname</label></td>
+				<td><label class="font-weight-bold" for="fullname">Enter Fullname</label></td>
 				<td>
 					<div class="form-group">
 						<form:input path="fullname" type="text" id="fullname" name="fullname" placeholder="Fullname" class="form-control" disabled="true"/>
@@ -43,7 +44,7 @@ pageEncoding="ISO-8859-1"%>
 				</td>
 			</tr>
 			<tr>
-				<td><label class="font-weight-bold">User Type</label></td>
+				<td><label class="font-weight-bold">Enter User Type</label></td>
 				<td>
 					<div class="form-group">
 						<form:select path="isAdmin" class="form-control">
@@ -54,7 +55,7 @@ pageEncoding="ISO-8859-1"%>
 				</td>
 			</tr>
 			<tr>
-				<td><label class="font-weight-bold">Account Type</label></td>
+				<td><label class="font-weight-bold">Enter Account Type</label></td>
 				<td>
 					<div class="form-group">
 						<form:select path="isOauthAccount" class="form-control" disabled="true">
@@ -65,7 +66,7 @@ pageEncoding="ISO-8859-1"%>
 				</td>
 			</tr>
 			<tr>
-				<td><label class="font-weight-bold">Account Status</label></td>
+				<td><label class="font-weight-bold">Enter Account Status</label></td>
 				<td>
 					<div class="form-group">
 						<form:select path="isAccountActive" class="form-control" disabled="false">
