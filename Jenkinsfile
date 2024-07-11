@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id')
+    }
+
     stages {
         stage('Clone Repository') {
             steps {
@@ -17,7 +21,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    dockerImage = docker.build("genaiihub24/my-docker:springboot-v2")
+                    dockerImage = docker.build("genaiihub24/my-docker:springboot-v2:latest")
                 }
             }
         }
@@ -25,8 +29,8 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
-                        dockerImage.push()
+                    docker.withRegistry('https://index.docker.io/v1/', "${DOCKERHUB_CREDENTIALS}") {
+                        dockerImage.push('latest')
                     }
                 }
             }
@@ -34,9 +38,9 @@ pipeline {
 
         stage('Deploy') {
             steps {
-				sh 'docker stop -f springboot-v2 || true'
-				sh 'docker rm -f springboot-v2 || true'
-                sh 'docker run -d --restart unless-stopped --name springboot-v2 -p 3000:8081 genaiihub24/my-docker:springboot-v2'
+                sh 'docker stop -f springboot-v2 || true'
+                sh 'docker rm -f springboot-v2 || true'
+                sh 'docker run -d --restart unless-stopped --name springboot-v2 -p 3000:8081 genaiihub24/my-docker:springboot-v2:latest'
             }
         }
     }
