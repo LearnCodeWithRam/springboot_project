@@ -44,7 +44,7 @@ pageEncoding="ISO-8859-1"%>
 						<form:errors path = "*" class = "errorblock" element = "div" />
 						<form:input path="fullname" type="hidden" name="fullname" id="fullname" value="" />
 						<div class="form-group">
-							<label class="font-weight-bold">Ramanuj Enter name</label><br>
+							<label class="font-weight-bold">Ramanujsaket Enter name</label><br>
 							<div class="input-group">
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="username-text-login">@</span>
