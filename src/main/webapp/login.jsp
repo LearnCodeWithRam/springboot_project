@@ -7,7 +7,7 @@ pageEncoding="ISO-8859-1"%>
 </c:import>
 <script type="text/javascript" src="/assets/js/loginOp.js"></script>
 
-<h1>Login Screen</h1>
+<h1>Ramanuj saket 1996 Login Window/Screen</h1>
 
 
 <c:url var="showSubmitPageUrl" value="/authenticate">
@@ -44,7 +44,7 @@ pageEncoding="ISO-8859-1"%>
 						<form:errors path = "*" class = "errorblock" element = "div" />
 						<form:input path="fullname" type="hidden" name="fullname" id="fullname" value="" />
 						<div class="form-group">
-							<label class="font-weight-bold">Username</label><br>
+							<label class="font-weight-bold">Ramanujsaket Enter name</label><br>
 							<div class="input-group">
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="username-text-login">@</span>
@@ -54,7 +54,7 @@ pageEncoding="ISO-8859-1"%>
 							<form:errors path="username" class="invalid"/>
 						</div>
 						<div class="form-group">
-							<label class="font-weight-bold">Password</label><br>
+							<label class="font-weight-bold">Ramanuj Enter your Password</label><br>
 							<div class="input-group">
 								<form:input path="password" type="password" id="password" name="password" class="form-control" required="required" placeholder="Password" />
 								<div class="input-group-append">
