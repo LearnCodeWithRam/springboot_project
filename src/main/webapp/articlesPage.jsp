@@ -107,7 +107,7 @@ String processSubComment(HttpServletRequest request, HttpServletResponse resp, C
 	<br>
 	<br>
 	<div>
-		<h4>Add Comment:</h4>
+		<h4>Ramanuj saket Add Comment:</h4>
 		<div style="padding: 10px; background-color: rgba(200, 200, 200, 0.2) ; width: 100%; border-radius: 10px; margin-left: 10px;" class="context-menu__item"  onkeydown="checkCtrlKeyDown(event)" onkeyup="checkCtrlKeyUp(event)">
 			<div style="padding: 10px" id="Toolbar_comments">
 				<button class="context-menu__link" title="bold" data-action="txt-bold" data-target="comments" onclick="formatText(this, 'bold')" name="text-bold" style="padding: 10px; display: inline;"><i class="fa fa-bold"></i></button>
@@ -193,7 +193,7 @@ String processSubComment(HttpServletRequest request, HttpServletResponse resp, C
 <br>
 
 <div id="commentsSection" class="commentsSection">
-	<div><h4>Comments:</h4></div><br>
+	<div><h4>here are your Comments:</h4></div><br>
 	<div id="mainCommentsLst"  onkeydown="checkCtrlKeyDown(event)" onkeyup="checkCtrlKeyUp(event)">
 	<%
 				Articles currArticle = (Articles) request.getAttribute("article");
