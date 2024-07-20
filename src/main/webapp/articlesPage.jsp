@@ -193,7 +193,7 @@ String processSubComment(HttpServletRequest request, HttpServletResponse resp, C
 <br>
 
 <div id="commentsSection" class="commentsSection">
-	<div><h4>here are your Comments:</h4></div><br>
+	<div><h4>hi here are your Comments:</h4></div><br>
 	<div id="mainCommentsLst"  onkeydown="checkCtrlKeyDown(event)" onkeyup="checkCtrlKeyUp(event)">
 	<%
 				Articles currArticle = (Articles) request.getAttribute("article");
