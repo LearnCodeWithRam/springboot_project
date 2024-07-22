@@ -4,6 +4,6 @@ pageEncoding="ISO-8859-1"%>
 <html>
 <body>
 <h2>Welcome to the DemoApplication For Learning Spring Boot!</h2>
-<p>Click <a href="/adminsdashboard/home">here</a> to go to home.</p>
+<p>Click <a href="/adminsdashboard/home">here</a> to browse to home.</p>
 </body>
 </html>
