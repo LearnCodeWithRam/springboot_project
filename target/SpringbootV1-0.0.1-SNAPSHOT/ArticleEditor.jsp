@@ -21,14 +21,14 @@ pageEncoding="ISO-8859-1"%>
 		    <div style="display: table; width: 100%; padding: 10px; color: white;">
 		        <div style="display: table-row">
 		            <div style="display: table-cell">
-		                <label for="title">Enter The Title Of the Article:</label><br>
+		                <label for="title">Write the correct Title Of the Article:</label><br>
 		                <input type="text" id="title" placeholder="Enter Your Title here..." name="title" f-Name="Title" value="" class="articleInput" style="padding: 5px; width: fit-content;" required="required">
 		            </div>
 		        </div>
 		        <br>
 		        <div style="display: table-row">
 		            <div style="display: table-cell">
-		                <label for="title">Enter The Name Of the Author:</label><br>
+		                <label for="title">Write The Name Of the Author:</label><br>
 		                <input type="text" id="noa" name="noa" value="${fullname}"  f-Name="Author Name" disabled class="articleInput" style="padding: 5px; background-color: rgba(#000000, 1); width: fit-content;" required="required">
 		            </div>
 		        </div>

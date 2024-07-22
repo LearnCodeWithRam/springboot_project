@@ -25,7 +25,7 @@ pageEncoding="ISO-8859-1"%>
 	
 		<div class="d-flex justify-content-between">
 			<div class="" align="center" style="padding: 10px; font-family: fantasy;">
-				<a href="/" style="text-decoration: none; color: white"><h1>InfoTrends.in</h1></a>
+				<a href="/" style="text-decoration: none; color: white"><h1>IIT Mandi ihub and HCI Foundation </h1></a>
 			</div>
 			<div class="" align="center" style="padding: 10px;">
 				
